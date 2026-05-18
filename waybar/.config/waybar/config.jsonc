@@ -1,0 +1,77 @@
+{
+    "layer": "top",            // Mantém a barra sempre visível sobre outras janelas
+    "position": "top",         // Posiciona a barra no topo da tela. Pode ser "bottom" (inferior)
+    "height": 30,              // Altura da barra em pixels
+    "modules-left": ["sway/workspaces"], // Módulos à esquerda: aqui, os workspaces
+    "modules-center": ["clock"],         // Módulos centralizados: aqui, o relógio
+    "modules-right": ["cpu", "memory", "disk", "network", "pulseaudio", "battery"], // Módulos à direita: CPU, Memória, HD, Rede, Volume e Bateria
+
+    // --- Módulo da CPU ---
+    "cpu": {
+        // "interval": O tempo (em segundos) para atualizar as informações
+        "interval": 5,
+        // "format": Como a informação será exibida. {usage} é o valor do uso da CPU.
+        "format": "CPU: {usage}%"
+    },
+
+    // --- Módulo da Memória RAM ---
+    "memory": {
+        "interval": 10,
+        // {used:0.1f} mostra o valor usado com uma casa decimal. {total} mostra o total.
+        "format": "RAM: {used:0.1f}GB/{total:0.1f}GB"
+    },
+
+    // --- Módulo do HD (Disco) ---
+    "disk": {
+        // "interval": Tempo (em segundos) para verificar o espaço em disco
+        "interval": 60,         
+        // "path": A partição que você quer monitorar. '/' é a partição raiz do sistema.
+        "path": "/",            
+        // "format": Mostra o espaço livre (free) de forma automática (ex: GB). 
+        "format": "HD: {free}"
+    },
+
+    // --- Módulo de Rede (Wi-Fi) ---
+    "network": {
+        "interval": 5,
+        // "format-wifi": Como a informação será exibida quando conectado no Wi-Fi
+        "format-wifi": "W: {essid} ({signalStrength}%)",
+        // "format-ethernet": Como a informação será exibida quando conectado no cabo.
+        // (Descomente a linha abaixo se quiser um formato diferente para o cabo)
+        // "format-ethernet": "E: {ipaddr}",
+        "format-disconnected": "W: Desconectado"
+    },
+
+    // --- Módulo do Áudio ---
+    "pulseaudio": {
+        // "format": Mostra o volume e um ícone que muda com o nível.
+        "format": "VOL: {volume}% {icon}",
+        // "format-muted": O que mostrar quando o som estiver mudo.
+        "format-muted": "Mudo",
+        // "format-icons": Define quais ícones usar para cada faixa de volume.
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    // --- Módulo da Bateria ---
+    "battery": {
+        "interval": 30,
+        // "states": Define regras para mudar a aparência baseado na porcentagem da bateria.
+        "states": {
+            "critical": 15  // A bateria é considerada crítica quando chega a 15%.
+        },
+        // "format": Mostra a porcentagem da bateria.
+        "format": "BAT: {capacity}%",
+        // "format-charging": O que mostrar quando a bateria está carregando.
+        "format-charging": "BAT: {capacity}% (Carregando)",
+        // "format-critical": O que mostrar quando a bateria está no estado 'critical'.
+        "format-critical": "BAT: {capacity}% (Crítico!)",
+        // "format-icons": Define ícones para cada faixa de bateria.
+        "format-icons": ["", "", "", ""]
+    },
+
+    // --- Módulo do Relógio ---
+    "clock": {
+        // "format": Define o formato da hora e data.
+        "format": "{:%H:%M    %d/%m/%Y}"
+    }
+}

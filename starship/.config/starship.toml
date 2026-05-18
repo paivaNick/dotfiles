@@ -1,0 +1,45 @@
+# Formato principal do prompt
+format = """
+$directory\
+$git_branch\
+$nodejs\
+$python\
+$golang\
+$rust\
+$character
+"""
+
+# Diretório (estilo padrão, mas pode customizar se quiser)
+[directory]
+style = "fg:#a6e3a1"
+
+# Git branch (seu estilo original)
+[git_branch]
+format = "[]($style)[[ ](bg:#89b4fa fg:#49628a bold)$branch](bg:#89b4fa fg:#4c4f69)[ ]($style)"
+style = "bg:#1a1b26 fg:#89b4fa"
+
+# Versão do Node.js (aparece se houver package.json ou node_modules)
+[nodejs]
+format = "[ v$version](fg:#71a5cf)"
+style = "fg:#71a5cf"
+
+# Versão do Python (aparece se houver .py, requirements.txt, etc.)
+[python]
+format = "[ v$version](fg:#4c9b6f)"
+style = "fg:#4c9b6f"
+
+# Versão do Go (aparece se houver go.mod ou .go)
+[golang]
+format = "[ v$version](fg:#7fd4f4)"
+style = "fg:#7fd4f4"
+
+# Versão do Rust (aparece se houver Cargo.toml)
+[rust]
+format = "[ v$version](fg:#e57373)"
+style = "fg:#e57373"
+
+# Símbolo de prompt (seu original)
+[character]
+success_symbol = "[🞈](#a6e3a1 bold)"
+error_symbol = "[🞈](#f38ba8)"
+vicmd_symbol = "[🞈](#f9e2af)"

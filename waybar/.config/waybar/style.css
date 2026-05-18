@@ -1,0 +1,55 @@
+*{
+    /* Fonte: Define uma fonte bonita com suporte a ícones. 'monospace' é um bom fallback.  */
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Brands", monospace;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto com 80% de transparência */
+    color: #ffffff;                     /* Cor do texto: branco */
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/* Estilo para os workspaces (espaços de trabalho) */
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+/* Estilo para o workspace que está ativo no momento */
+#workspaces button.focused {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+/* Estilo geral para cada módulo (CPU, Memória, etc.) */
+#cpu, #memory, #disk, #network, #pulseaudio, #battery, #clock {
+    padding: 0 12px;        /* Espaçamento interno entre os módulos */
+    margin: 0 2px;          /* Margem externa entre os módulos */
+}
+
+/* Regras específicas para alguns módulos (ex: mudança de cor) */
+#battery.critical:not(.charging) {
+    color: #ff5555;          /* A bateria fica vermelha quando em estado crítico e descarregando */
+    animation-name: blink;   /* Aplica a animação para piscar */
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Animação para piscar (usada para bateria crítica) */
+@keyframes blink {
+    to {
+        background-color: #ff5555;
+        color: #000000;
+    }
+}
+
+/* Estilo para quando o som está mudo */
+#pulseaudio.muted {
+    color: #888888;
+}

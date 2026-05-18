@@ -1,0 +1,10 @@
+[terminal.shell]
+
+program = "/usr/bin/fish"
+
+[general]
+import  = ["~/.config/alacritty/monokai-pro.toml"]
+
+[terminal]
+#builtin_box_drawing   = true
+
