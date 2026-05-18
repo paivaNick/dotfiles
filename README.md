@@ -12,6 +12,7 @@ Eles são organizados em **pacotes** usando [GNU Stow](https://www.gnu.org/softw
 | Neovim        | `~/.config/nvim/`                      |
 | Sway          | `~/.config/sway/config`                |
 | Waybar        | `~/.config/waybar/` (config.jsonc + style.css) |
+| WayPaper        | `~/.config/waypaper/`                |
 | tmux          | `~/.tmux.conf`                         |
 
 ## 🚀 Como usar este repositório
