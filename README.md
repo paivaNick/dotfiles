@@ -2,24 +2,39 @@
 
 Este repositório contém todos os meus arquivos de configuração (dotfiles) para programas como shell, editores, gerenciadores de janela, barra e terminal.  
 Eles são organizados em **pacotes** usando [GNU Stow](https://www.gnu.org/software/stow/), o que permite instalar, remover ou atualizar configurações de cada programa de forma independente e limpa.
+![Screenshot](screenshot.png)
 
 ## 📦 O que está incluído
 
-| Programa      | Configuração                           |
-|---------------|----------------------------------------|
-| Alacritty     | `~/.config/alacritty/`                 |
-| Fish          | `~/.config/fish/`                      |
-| Neovim        | `~/.config/nvim/`                      |
-| Sway          | `~/.config/sway/config`                |
-| Waybar        | `~/.config/waybar/` (config.jsonc + style.css) |
-| WayPaper      | `~/.config/waypaper/`                 |
-| tmux          | `~/.tmux.conf`                        |
-| rofi          | `~/.config/rofi`                      |
-| i3            | `~/.config/i3`                        |
-| i3status      | `~/.config/i3status`                  |
-| wallpapers    | **alguns wallpapers que eu uso**      |
-| starship      | `~/.config/starship.toml`             |
+| Programa   | Configuração                                   |
+| ---------- | ---------------------------------------------- |
+| Alacritty  | `~/.config/alacritty/`                         |
+| Fish       | `~/.config/fish/`                              |
+| Neovim     | `~/.config/nvim/`                              |
+| Sway       | `~/.config/sway/config`                        |
+| Waybar     | `~/.config/waybar/` (config.jsonc + style.css) |
+| WayPaper   | `~/.config/waypaper/`                          |
+| tmux       | `~/.tmux.conf`                                 |
+| rofi       | `~/.config/rofi`                               |
+| i3         | `~/.config/i3`                                 |
+| i3status   | `~/.config/i3status`                           |
+| wallpapers | **alguns wallpapers que eu uso**               |
+| starship   | `~/.config/starship.toml`                      |
 
+---
+## 🧰 Minha Stack (Atual)
+| Ferramenta       | Descrição                                  |
+| ---------------- | ------------------------------------------ |
+| 🐧 EndeavourOS   | Arch Based Linux Distro                    |
+| 🌲 i3 wm         | Window Manager                             |
+| 🌲 i3 Status     | Bar and Tray icons                         |
+| 🐁 XFCE4 applets | Tray network and sound                     |
+| 📂 Thunar        | File manager with programmable actions     |
+| 🚀 Rofi          | Launcher (apps, emojis, etc.)              |
+| 🖥️ Alacritty    | Terminal emulator                          |
+| 🖥️ Fish         | Terminal framework                         |
+| 🦇 Bat           | `cat` replacement with syntax highlighting |
+| 🚢 Starship      | Terminal Line Emojis and cool status       |
 
 ## 🚀 Como usar este repositório
 

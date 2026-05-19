@@ -3,7 +3,7 @@
 program = "/usr/bin/fish"
 
 [general]
-import  = ["~/.config/alacritty/monokai-pro.toml"]
+import  = ["~/.config/alacritty/omni.toml"]
 
 [terminal]
 #builtin_box_drawing   = true
