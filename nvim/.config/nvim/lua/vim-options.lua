@@ -29,4 +29,3 @@ vim.keymap.set("t", "<C-l>", [[<C-\><C-n><C-w>l]])
 
 
 
-

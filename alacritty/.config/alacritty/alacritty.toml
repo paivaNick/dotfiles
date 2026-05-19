@@ -7,4 +7,17 @@ import  = ["~/.config/alacritty/monokai-pro.toml"]
 
 [terminal]
 #builtin_box_drawing   = true
+[font]
+size = 12
 
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
