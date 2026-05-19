@@ -12,8 +12,14 @@ Eles são organizados em **pacotes** usando [GNU Stow](https://www.gnu.org/softw
 | Neovim        | `~/.config/nvim/`                      |
 | Sway          | `~/.config/sway/config`                |
 | Waybar        | `~/.config/waybar/` (config.jsonc + style.css) |
-| WayPaper        | `~/.config/waypaper/`                |
-| tmux          | `~/.tmux.conf`                         |
+| WayPaper      | `~/.config/waypaper/`                 |
+| tmux          | `~/.tmux.conf`                        |
+| rofi          | `~/.config/rofi`                      |
+| i3            | `~/.config/i3`                        |
+| i3status      | `~/.config/i3status`                  |
+| wallpapers    | **alguns wallpapers que eu uso**      |
+| starship      | `~/.config/starship.toml`             |
+
 
 ## 🚀 Como usar este repositório
 
