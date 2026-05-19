@@ -1,0 +1,50 @@
+# i3status configuration file
+# see "man i3status" for documentation
+
+general {
+    colors = true
+    interval = 5
+    # the i3bar JSON protocol expects the output_format "i3bar"
+    output_format = "i3bar"
+}
+
+order += "battery 0"
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "volume master"
+order += "tztime local"
+
+# Battery
+battery 0 {
+    format = "%status %percentage %remaining"
+    low_threshold = 30
+    path = "/sys/class/power_supply/BAT0/uevent"
+}
+
+# CPU Usage
+cpu_usage {
+    format = "%usage"
+}
+
+# Memory
+memory {
+    format = "%available" # to show available memory instead
+}
+
+# Disk
+disk "/" {
+    format = "%free"
+}
+
+# Volume
+volume master {
+    format = "♪ %volume"
+    format_muted = "🔇 %volume"
+    device = "pulse"
+}
+
+# Date / Time
+tztime local {
+    format = "%a %d-%m-%Y %H:%M:%S"
+}
